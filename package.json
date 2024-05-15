@@ -1,0 +1,23 @@
+{
+  "name": "naners",
+  "version": "1.0.0",
+  "description": "Discord Bot Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randy555/Naners.git"
+  },
+  "author": "randy555",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randy555/Naners/issues"
+  },
+  "homepage": "https://github.com/randy555/Naners#readme",
+  "dependencies": {
+    "discord.js": "^14.15.2"
+  },
+  "devDependencies": {}
+}
