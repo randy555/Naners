@@ -3,19 +3,13 @@
 // Node stuff
 const fs = require('node:fs');
 const path = require('node:path');
-// Require the necessary discord.js classes
 
+// Require the necessary discord.js classes
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
-const internal = require('node:stream');
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-
-// When the client is ready, run this code (only once).
-client.once(Events.ClientReady, readyClient => {
-	console.log(`Ready! Logged in as ${readyClient.user.tag}`);
-});
 
 // Used to store and efficiently retrieve commands for execution.
 client.commands = new Collection();
@@ -39,28 +33,17 @@ for (const folder of commandFolders) {
 	}
 }
 
-// Command finding and execution execution 
-client.on(Events.InteractionCreate, async interaction => {
-        if (!interaction.isChatInputCommand()) return;
-        
-        const command = interaction.client.command.get(interaction.commandName);
+const eventsPath = path.join(__dirname, 'events');
+const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 
-        if (!command) {
-            console.error('No command matching ${interaction.commandName} was found.');
-            return;
-        }
+for (const file of eventFiles) {
+	const filePath = path.join(eventsPath, file);
+	const event = require(filePath);
+	if (event.once) {
+		client.once(event.name, (...args) => event.execute(...args));
+	} else {
+		client.on(event.name, (...args) => event.execute(...args));
+	}
+}
 
-        try {
-            await command.execute(interaction);
-        } catch (error) {
-            console.error(error);
-            if (interaction.replied || interaction.deferred) {
-                await interaction.followUp({content: 'There was an error while executing this command!', ephemeral: true})
-            } else {
-                await interaction.reply({content: 'There was an error while executing this command!', ephemeral: true})
-            }
-        }
-});
-
-// Log in to Discord with your client's token
 client.login(token);

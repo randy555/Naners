@@ -7,7 +7,7 @@ module.exports = {
         .setName('user')
         .setDescription('This command provides information about the user'),
     async execute(interaction){
-        await interaction.reply('Your username is ${interaction.user.username}, and you joined on ${interaction.member.joinedAt}.');
+        await interaction.reply(`This command was run by ${interaction.user.username}, who joined on ${interaction.member.joinedAt}.`);
     },
 
 };
