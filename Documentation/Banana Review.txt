@@ -48,5 +48,5 @@ Function: Sends a recommendation report to the creator and confirms receipt to t
 
 ------------------Auxiliary Functions-------------------
 Window Creation for Call Command: Handles creating and displaying a window with the user's message on the creator's computer.
-Monkey Facts Loop: Continuously sends random monkey facts at hourly intervals when activated.
+Monkey Facts Loop: Continuously sends random monkey facts on hourly intervals when activated.
 Bug and Recommendation Report Documentation: Gathers user and guild information to document bug reports and recommendations, then sends them to the creator.
