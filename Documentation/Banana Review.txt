@@ -1,0 +1,52 @@
+General Overview of Previous Discord Bot Banana Facts.
+
+Creator Info: Sir.MilkGobbler 
+
+Bot Client Creation: Initializes the Discord bot client and necessary variables.
+
+-----------Commands and Their Purpose------------
+
+Help Command
+Command: help
+Description: Displays help commands.
+Function: Sends a help message to the user.
+
+Credits Command
+Command: credits
+Description: Gives credit to the bot creator.
+Function: Sends a message crediting the creator of the bot.
+
+Facts Command
+Command: facts
+Description: Provides facts about bananas, plantains, pears, and tomatoes.
+Function: Sends a fact based on the user's choice.
+
+Call Command
+Command: call
+Description: Displays a window on the creator's computer.
+Function: Shows a window with a message on the creator's computer and prints relevant information in the console.
+
+Start/Stop Monkey Facts Command
+Command: start-stop
+Description: Starts or stops sending monkey facts every hour.
+Function: Sends a message every hour with a random monkey fact or stops this process based on the user’s input.
+
+Time Difference Command
+Command: time_difference
+Description: Calculates the time difference between two dates or from the current date.
+Function: Calculates and sends the time difference based on the provided dates.
+
+Bug Report Command
+Command: bug_report
+Description: Allows users to report bugs.
+Function: Sends a bug report to the creator and confirms receipt to the user.
+
+Recommendation Report Command
+Command: recommendation_report
+Description: Allows users to make recommendations.
+Function: Sends a recommendation report to the creator and confirms receipt to the user.
+
+------------------Auxiliary Functions-------------------
+Window Creation for Call Command: Handles creating and displaying a window with the user's message on the creator's computer.
+Monkey Facts Loop: Continuously sends random monkey facts at hourly intervals when activated.
+Bug and Recommendation Report Documentation: Gathers user and guild information to document bug reports and recommendations, then sends them to the creator.
