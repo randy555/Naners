@@ -1,0 +1,11 @@
+After creation of the first test bot go back to Banana Bot, review the old python code and write down notes about what it does.
+The notes file for this is Banana Review.txt
+
+After reviewing Banana, review the purpose of the file(s) and based on that create new notes that better outlines the scope of Naners and notes that work better with JS.
+The notes file for this is Naners-Scope.txt
+
+The only functionality that needs to be created from here forward, is the slash commands, their properites, and any other type of interaction deemed nessecary from 
+the previous bot.
+
+After recreating the previous bot in JS consider exploring new functionality and new possiblities with discord. Impliment ideas from friends or things you find on the internet.
+ 
