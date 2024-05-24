@@ -24,7 +24,7 @@ module.exports = {
         const factList = facts[type]; // Get list of facts based on user (type) 
 
         if (factList) {
-            const fact = factList[Math.floor(Math.random() * factList.length)];
+            const fact = factList[Math.floor(Math.random() * factList.length)]; // Create "random" number to pull a fact from the list.
             await interaction.reply(fact);
         } else {
             await interaction.reply('Please specify a valid type: banana, plantain, pear, or tomato.');
