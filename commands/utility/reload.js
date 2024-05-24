@@ -22,7 +22,7 @@ module.exports = {
             interaction.client.commands.delete(command.data.name);
             const newCommand = require(`./${command.data.name}.js`);
             interaction.client.commands.set(newCommand.data.name, newCommand);
-            console.log(`The command "${command.data.name}" was reloaded by ${interaction.user.username}`)
+            console.log(`The command "${newCommand.data.name}" was reloaded by ${interaction.user.username}`)
             await interaction.reply(`Command \`${newCommand.data.name}\` was reloaded!`);
             
         } catch (error) {
