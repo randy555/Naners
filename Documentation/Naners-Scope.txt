@@ -4,7 +4,9 @@ More like notes for myself so I know where I am
 5/23/24
 Completed Facts.JS Command. Created json file for data.
 Removed Server Command, replaced with Help/credit command.
+5/23/24 - 2 
 
+Added reload command, modified deploy-commands.js to account for guild only commands. Added guild only option to reload.js 
 
 Need to start time difference command, Recommendation Report cmd, and Bug Report cmd.
 
