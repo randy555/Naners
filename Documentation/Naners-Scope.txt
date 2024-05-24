@@ -1,2 +1,11 @@
 Inital scope for the project
+More like notes for myself so I know where I am
 
+5/23/24
+Completed Facts.JS Command. Created json file for data.
+Removed Server Command, replaced with Help/credit command.
+
+
+Need to start time difference command, Recommendation Report cmd, and Bug Report cmd.
+
+Research how to create a window or find a better approach for Call command to make it more stream lined and pretty compared to previous version.

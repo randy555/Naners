@@ -9,7 +9,8 @@ module.exports = {
 
 		if (!command) {
 			console.error(`No command matching ${interaction.commandName} was found.`);
-			return;
+			await interaction.reply({content:'There was an error while executing the command or the command is invalid, please wait a while and try again.', ephemeral: true })
+			return; // Added interaction reply above in the event that the command has not registered with discord properly yet.
 		}
 
 		try {

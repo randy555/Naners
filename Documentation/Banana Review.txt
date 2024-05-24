@@ -8,22 +8,22 @@ Bot Client Creation: Initializes the Discord bot client and necessary variables.
 
 -----------Commands and Their Purpose------------
 
-Help Command
-Command: help
-Description: Displays help commands.
-Function: Sends a help message to the user.
+//Help Command
+//Command: help
+//Description: Displays help commands.
+//Function: Sends a help message to the user.
 
-         Combine Help and Credit commands.
+         //Combine Help and Credit commands.
 
-Credits Command
-Command: credits
-Description: Gives credit to the bot creator.
-Function: Sends a message crediting the creator of the bot.
+//Credits Command
+//Command: credits
+//Description: Gives credit to the bot creator.
+//Function: Sends a message crediting the creator of the bot.
 
-Facts Command
-Command: facts
-Description: Provides facts about bananas, plantains, pears, and tomatoes.
-Function: Sends a fact based on the user's choice.
+//Facts Command
+//Command: facts
+//Description: Provides facts about bananas, plantains, pears, and tomatoes.
+//Function: Sends a fact based on the user's choice.
 
 *Call Command
 Command: call
